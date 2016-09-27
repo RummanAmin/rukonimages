@@ -2,6 +2,14 @@
 
 	<?php get_template_part( 'content', 'heading' ); ?>
 
+  <?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+      $image = $image[0]; ?>
+  <?php else :
+  $image = get_bloginfo( 'stylesheet_directory') . '/img/backgrounds/download2.jpg'; ?>
+  <?php endif; ?>
+  <div class="band banner" style="background-image: url('<?php echo $image; ?>')" ></div>
+
 	<div class="band main">
     <section class="layout">
       <article>

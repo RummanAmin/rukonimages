@@ -2,7 +2,7 @@
         <footer class="layout">
           <article>
             <h4>Customer Area</h4>
-            <p>If you're already a customer, click <a href="<?php bloginfo( 'url' ); ?>/customer-area/" title="">here</a> to access your photos.<br>Please get in touch if you need to create an account.</p>
+            <p>If you're already a customer, click <a href="<?php bloginfo( 'url' ); ?>/albums/" title="">here</a> to access your photos.<br>Please get in touch if you need to create an account.</p>
             <p><small>Copyright © <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. Website by <a href="http://www.bytebubble.co.uk">Bytebubble</a></small></p>
           </article>
           <article>
@@ -10,16 +10,16 @@
             <p>Get in touch with me if you have any questions.</p>
             <ul>
               <li>E: <a href="mailto:info@rukonimages.com">info@rukonimages.com</a></li>
-              <li>P: <a href="tel:07545281028" target="_self">07545281028</a></li>
+              <li>P: <a href="tel:07545281028" target="_self">+44 (0)7545281028</a></li>
             </ul>
           </article>
           <article>
             <h4>Social</h4>
             <p>Follow us on Social Media to get all our updates.</p>
             <ul class="social-links">
-              <li><a href="http://www.twitter.com//rukonimages" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons/twitter.svg" alt=""></a></li>
-              <li><a href="http://www.facebook.com/pages/RukonImages/176364775764367?fref=ts" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons/facebook.svg" alt=""></a></li>
-              <li><a href="http://www.instagram.com/rukonimages" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons/instagram.svg" alt=""></a></li>
+              <li><a href="http://www.twitter.com//rukonimages" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons/twitter.svg" alt="Twitter"></a></li>
+              <li><a href="http://www.facebook.com/pages/RukonImages/176364775764367?fref=ts" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons/facebook.svg" alt="Facebook"></a></li>
+              <li><a href="http://www.instagram.com/rukonimages" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/icons/instagram.svg" alt="Instagram"></a></li>
             </ul>
           </article>
         </footer>

@@ -11,7 +11,7 @@
         <?php the_content(); ?>
         
       </article>
-      <article class="pagination">
+      <!-- <article class="pagination">
         <hr>
         <h5>Post navigation</h5>
         <p>
@@ -19,7 +19,7 @@
           <a href="<?php bloginfo('url'); ?>/blog">Return</a> -
           <?php next_post_link(); ?>
         </p>
-      </article>
+      </article> -->
     </section>
   </div>
 

@@ -28,7 +28,7 @@
 	// Add JS Files
 	function wpt_theme_js() {
 
-		wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
+		wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery', 'masonry'), '', true );
 
 		$translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
 		wp_localize_script( 'main_js', 'object_name', $translation_array );
@@ -49,7 +49,7 @@
 
 	// Featured Image
 	add_theme_support( 'post-thumbnails' ); 
-
+	add_image_size( 'square', 500, 500, true );
 	add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
 
 	function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
@@ -74,5 +74,12 @@
     </style>
 	<?php }
 	add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+	// Remove Protected Title
+	function title_format($content) {
+	return '%s';
+	}
+	add_filter('private_title_format', 'title_format');
+	add_filter('protected_title_format', 'title_format');
 
  ?>

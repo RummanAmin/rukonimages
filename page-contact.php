@@ -2,6 +2,14 @@
 
 	<?php get_template_part( 'content', 'heading' ); ?>
 
+  <?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+      $image = $image[0]; ?>
+  <?php else :
+  $image = get_bloginfo( 'stylesheet_directory') . '/img/backgrounds/download2.jpg'; ?>
+  <?php endif; ?>
+  <div class="band banner" style="background-image: url('<?php echo $image; ?>')" ></div>
+
 	<div class="band main">
     <section class="layout">
       <article>
@@ -14,7 +22,7 @@
           <p>Alternatively, you can use a more direct approach.</p>
           <ul>
             <li>E: <a href="mailto:info@rukonimages.com">info@rukonimages.com</a></li>
-            <li>P: <a href="tel:07545281028" target="_self">07545281028</a></li>
+            <li>P: <a href="tel:07545281028" target="_self">+44 (0)7545281028</a></li>
           </ul>
         </div>
         <div class="contact-info">
