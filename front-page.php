@@ -28,6 +28,26 @@
             wp_nav_menu ( $defaults );
 
           ?>
+
+          <button id="trigger-overlay" type="button">View Menu</button>
+          <div class="overlay overlay-hugeinc">
+            <button type="button" class="overlay-close">Close</button>
+            
+            <?php 
+
+              $defaults = array(
+
+                'container' => 'nav',
+                'theme_location' => 'main-menu',
+                'container_class' => 'mobile-navigation'
+
+              );
+
+              wp_nav_menu ( $defaults );
+
+            ?>
+
+          </div>
         </header>
       </div>
 
