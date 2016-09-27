@@ -2,7 +2,7 @@
         <footer class="layout">
           <article>
             <h4>Customer Area</h4>
-            <p>If you're already a customer, click <a href="<?php bloginfo( 'url' ); ?>/albums/" title="">here</a> to access your photos.<br>Please get in touch if you need to create an account.</p>
+            <p>If you're already a customer, click <a href="<?php bloginfo( 'url' ); ?>/albums/" class="highlight-this">here</a> to access your photos.<br>Please get in touch if you need to create an account.</p>
             <p><small>Copyright © <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. Website by <a href="http://www.bytebubble.co.uk">Bytebubble</a></small></p>
           </article>
           <article>
